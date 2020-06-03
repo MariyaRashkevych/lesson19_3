@@ -1,0 +1,65 @@
+
+.container {
+    float: left;
+    display: inline-block;
+    margin: 20px;
+    border: 25px solid transparent;
+    border-image-source: url(../img/board.jpg);
+    -moz-border-image: url(../img/board.jpg) 8 6 4 10; 
+    -webkit-border-image: url(../img/board.jpg) 8 6 4 10; 
+    -o-border-image: url(../img/board.jpg) 8 6 4 10; 
+    border-image-outset: 0.5;
+}
+.checker {
+    width: 600px;
+    height: 600px;
+   background: repeating-conic-gradient(#271103 0% 25%,#e2a369 0% 5%, #d88f63 5% 10%,#e2a369 10% 15%,#d88f63 15% 20%,#e2a369  20% 25%,#d88f63 25% 30%,#e2a369 30% 35%,
+   #d88f63 35% 40%,#e2a369 40% 45%,#d88f63 45% 50%);
+   background-size: 150px 150px;
+    display: inline-block;
+    margin: 10px;
+}
+.black {
+    float:left; 
+    display:inline-block;
+    margin-left: 15px;
+    margin-top: 10px; 
+    width: 60px;
+    height: 60px;
+} 
+.white {
+    float:left;
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 10px; 
+    width: 60px;
+    height: 60px; 
+}
+.checker div:nth-child(-n+8):nth-child(even){
+    background: radial-gradient(white,black,grey,black,#846b5d 40%,transparent 41%), conic-gradient(black 0% 100%);
+    border-radius: 50%;
+} 
+.checker div:nth-child(n+9):nth-child(-n+16):nth-child(odd){
+    background: radial-gradient(white,black,grey,black,#846b5d 40%,transparent 41%), conic-gradient(black 0% 100%);
+    border-radius: 50%;
+} 
+.checker div:nth-child(n+17):nth-child(-n+24):nth-child(even){
+    background: radial-gradient(white,black,grey,black,#846b5d 40%,transparent 41%), conic-gradient(black 0% 100%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+} 
+ .checker div:nth-child(n+41):nth-child(-n+48):nth-child(odd){
+    background: radial-gradient(black,grey, white, grey, white 40%,transparent 41%), conic-gradient(white 0% 70%);
+    border-radius: 50%; }  
+
+ .checker div:nth-child(n+49):nth-child(-n+56):nth-child(even){
+    background: radial-gradient(black,grey, white, grey, white 40%,transparent 41%), conic-gradient(white 0% 70%);
+    border-radius: 50%;
+} 
+.checker div:nth-child(n+57):nth-child(-n+64):nth-child(odd){
+    background: radial-gradient(black,grey, white, grey, white 40%,transparent 41%), conic-gradient(white 0% 70%);
+    border-radius: 50%;
+}   
